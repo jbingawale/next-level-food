@@ -29,6 +29,28 @@ Start the Next.js development server:
 npm run dev
 ```
 
+5. Environment Setup
+To enable image uploads to AWS S3, you need to configure your environment variables:
+
+  1. Rename the .env.local.example file to .env.local:
+     ```bash
+     mv .env.local.example .env.local
+     ```
+  2. Open .env.local and provide the values for the following keys:
+     ```bash
+     # AWS Credentials
+      AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID
+      AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY
+      
+      # S3 Configuration
+      AWS_S3_BUCKET_NAME=your-bucket-name
+      AWS_S3_BUCKET_REGION=your-bucket-region-name eg-ap-south-1
+      
+      # Derived URLs (Used for next.config.js and Image components)
+      AWS_S3_BUCKET_NAME_WITH_SERVER_REGION=your-bucket-name.s3.ap-south-1.amazonaws.com
+      AWS_S3_BUCKET_IMAGE_URL=https://your-bucket-name.s3.ap-south-1.amazonaws.com
+     ```
+
 Open http://localhost:3000 in your browser to see the result.
 
 🛠️ Tech Stack
