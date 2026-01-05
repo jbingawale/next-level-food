@@ -1,0 +1,6 @@
+AWS_ACCESS_KEY_ID=<your aws access key>
+AWS_SECRET_ACCESS_KEY=<your aws secret access key>
+AWS_S3_BUCKET_NAME_WITH_SERVER_REGION=<your_aws_bucket_name.s3.region.amazonaws.com>
+AWS_S3_BUCKET_IMAGE_URL=<https://your_aws_bucket_name.s3.region.amazonaws.com>
+AWS_S3_BUCKET_REGION=<your_aws_s3_bucket_region>
+AWS_S3_BUCKET_NAME=<your_aws_s3_bucket_image_name>
