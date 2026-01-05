@@ -17,7 +17,7 @@ export default function MealDetails({ params }) {
       <header className={classes.header}>
         <div className={classes.image}>
           <Image
-            src={`${process.env.AWS_S3_BUCKET_IMAGE_URL}/${image}`}
+            src={`${process.env.AWS_S3_BUCKET_IMAGE_URL}/${meal.image}`}
             alt={meal.title}
             fill
           />
